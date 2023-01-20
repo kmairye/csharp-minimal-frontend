@@ -22,8 +22,9 @@ inputForm.addEventListener("submit", (e)=>{
 })
 
 inputArea.addEventListener('keyup', (e)=>{
+    const pathToMinimalApi = "INSERT_LOCAL_PATH_HERE"
     console.log(inputArea.value)
-    fetch(`https://localhost:7076/${inputArea.value}`)
+    fetch(`${pathToMinimalApi}${inputArea.value}`)
     .then(async (res)=>{
         let resJ = await res.json()
         handleSuggestions(resJ)
