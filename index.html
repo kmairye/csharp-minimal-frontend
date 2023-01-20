@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>WordPredictor</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>WordPredictor</h1>
+        </div>
+    </header>
+    <main>
+        <div class="grid gap-2">
+            <div class="grid">
+                <div class="grid">
+                    <h2>Build your story sentence by sentence</h2>
+                    <p>Enter sentences and get help with troubling words. When the sentence is ready, click "Add" to add it to your full story!</p>
+                </div>
+            </div>
+            <div class="grid cols-2 gap-1">
+                <div class="grid gap-1">
+                    <form id="inputForm" action="" method="get" class="grid gap-1">
+                        <textarea name="inputArea" id="inputArea" cols="30" rows="10"></textarea>
+                        <button class="btn-primary" type="submit">Add</button>
+                    </form>
+                    <div id="predictionsContainer" class="flex flex-wrap">
+                        
+                    </div>
+                </div>
+                <div class="grid">
+                    <div id="storyContainer">    
+                      test
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <template id="paragraphTemplate">
+        <p class="paragraph"></p>
+    </template>
+    <template id="predictionTemplate">
+        <p class="prediction"></p>
+    </template>
+    <script src="index.js"></script>
+</body>
+</html>
